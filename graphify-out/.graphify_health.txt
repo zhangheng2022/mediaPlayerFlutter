@@ -1,0 +1,3 @@
+25 dangling-endpoint edges
+1 collapsed (directed) edges
+9 collapsed (undirected) edges
