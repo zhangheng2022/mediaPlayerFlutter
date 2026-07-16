@@ -15,9 +15,9 @@
     "semantic_hash": "f8660aaa96f6439c5f0a38bb0dddf2a2"
   },
   "android/build.gradle.kts": {
-    "mtime": 1784199891.1536288,
-    "ast_hash": "803fe22651fbe96ed401eb0b66a492d1",
-    "semantic_hash": "803fe22651fbe96ed401eb0b66a492d1"
+    "mtime": 1784209748.9887035,
+    "ast_hash": "55847fae9a18953680b5f59449b6f8c3",
+    "semantic_hash": ""
   },
   "android/settings.gradle.kts": {
     "mtime": 1784199891.485708,
@@ -85,12 +85,12 @@
     "semantic_hash": "ffa1a7c0a2ad45a2c14a921596516ff8"
   },
   "macos/Flutter/GeneratedPluginRegistrant.swift": {
-    "mtime": 1784199899.9406593,
-    "ast_hash": "c840bc53b61279c2fb631741134c2ed7",
-    "semantic_hash": "c840bc53b61279c2fb631741134c2ed7"
+    "mtime": 1784207945.954113,
+    "ast_hash": "a2b93ea5b1036a173ca8b16c83225053",
+    "semantic_hash": ""
   },
   "macos/Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage/Package.swift": {
-    "mtime": 1784207437.435381,
+    "mtime": 1784211082.0411615,
     "ast_hash": "61d013e6c93b3d917c4f6178b9f6c9cb",
     "semantic_hash": "61d013e6c93b3d917c4f6178b9f6c9cb"
   },
@@ -325,8 +325,8 @@
     "semantic_hash": "30cc1614b16214b66c014af09ba699eb"
   },
   "pubspec.yaml": {
-    "mtime": 1784204336.0452552,
-    "ast_hash": "0d09bb7ed2013e975998656ff26b26ff",
+    "mtime": 1784209055.2328026,
+    "ast_hash": "887a1c88c79bebf00f6ed35b3dbd58c1",
     "semantic_hash": ""
   },
   "web/index.html": {
@@ -540,8 +540,8 @@
     "semantic_hash": ""
   },
   "lib/app/app.dart": {
-    "mtime": 1784204458.5495925,
-    "ast_hash": "5f91b69e1a36743f9cee8419d7320091",
+    "mtime": 1784208238.4846053,
+    "ast_hash": "bc285851fe1badfd07da5998734965b7",
     "semantic_hash": ""
   },
   "lib/app/router.dart": {
@@ -555,13 +555,13 @@
     "semantic_hash": ""
   },
   "lib/features/home/presentation/home_screen.dart": {
-    "mtime": 1784204596.1758754,
-    "ast_hash": "4fcedeb5796c20dc8f06845916465dea",
+    "mtime": 1784210448.3030484,
+    "ast_hash": "a91a5ac97e98428b28910d4e82ce7ee4",
     "semantic_hash": ""
   },
   "lib/features/library/presentation/library_screen.dart": {
-    "mtime": 1784204596.1768804,
-    "ast_hash": "d8944bf9ff62a5b521d28f8c0bcffca3",
+    "mtime": 1784210510.1431832,
+    "ast_hash": "0fb64c01c0438fd6bf6e08570edeec0d",
     "semantic_hash": ""
   },
   "lib/features/playlist/presentation/playlist_screen.dart": {
@@ -585,8 +585,8 @@
     "semantic_hash": ""
   },
   "lib/shared/widgets/mini_player.dart": {
-    "mtime": 1784204300.3578172,
-    "ast_hash": "a736d42511d271b58b607970ee4e189a",
+    "mtime": 1784208335.5578978,
+    "ast_hash": "60a07ccde79d57ad7da967d1cb261dd1",
     "semantic_hash": ""
   },
   "lib/theme/colors.dart": {
@@ -615,8 +615,8 @@
     "semantic_hash": ""
   },
   "test/application_test.dart": {
-    "mtime": 1784204596.17988,
-    "ast_hash": "6d369ef83c30c561e505f0d73304dfea",
+    "mtime": 1784210978.5525873,
+    "ast_hash": "0700481d9052b54a2d4b28bd3b9b7eb1",
     "semantic_hash": ""
   },
   ".agents/skills/hallmark/SKILL.md": {
@@ -1157,6 +1157,91 @@
   "forui.yaml": {
     "mtime": 1784203101.285401,
     "ast_hash": "504b346d32bd69a1fd73d76ee926c580",
+    "semantic_hash": ""
+  },
+  "lib/app/app_dependencies.dart": {
+    "mtime": 1784210424.6212666,
+    "ast_hash": "0a6717a15aa8ae806e8af5f7d3d3f252",
+    "semantic_hash": ""
+  },
+  "lib/app/app_scope.dart": {
+    "mtime": 1784208238.4816072,
+    "ast_hash": "e501378c9e171e27b0817661d7824e03",
+    "semantic_hash": ""
+  },
+  "lib/features/library/application/library_controller.dart": {
+    "mtime": 1784210424.6197624,
+    "ast_hash": "f4d56c43e75d81bb65b7e3fc84aa4ed3",
+    "semantic_hash": ""
+  },
+  "lib/features/library/data/local_music_library_repository.dart": {
+    "mtime": 1784210424.6197624,
+    "ast_hash": "dadfa194235366336aae1b5cf777f13c",
+    "semantic_hash": ""
+  },
+  "lib/features/library/data/local_music_scanner.dart": {
+    "mtime": 1784210424.6187625,
+    "ast_hash": "b6770883c0e8cbe84c59638d0c0afa73",
+    "semantic_hash": ""
+  },
+  "lib/features/library/data/music_file_picker_service.dart": {
+    "mtime": 1784210424.6187625,
+    "ast_hash": "758d121440c1d40e7bd20b4de825a30b",
+    "semantic_hash": ""
+  },
+  "lib/features/library/domain/audio_track.dart": {
+    "mtime": 1784210978.5477972,
+    "ast_hash": "94c219d05017aa4c236754260fcc99f7",
+    "semantic_hash": ""
+  },
+  "lib/features/library/domain/music_library_repository.dart": {
+    "mtime": 1784210424.6134596,
+    "ast_hash": "1a079d0e5338236436bfcded712d266e",
+    "semantic_hash": ""
+  },
+  "lib/features/library/presentation/track_tile.dart": {
+    "mtime": 1784210978.549234,
+    "ast_hash": "cbec16d67b53d07324d673beaa975f65",
+    "semantic_hash": ""
+  },
+  "lib/features/player/application/player_controller.dart": {
+    "mtime": 1784208481.13957,
+    "ast_hash": "0d8923b0cd01c5129531a32aff17569b",
+    "semantic_hash": ""
+  },
+  "lib/features/player/data/just_audio_playback_service.dart": {
+    "mtime": 1784208354.104788,
+    "ast_hash": "08d2c0127fb9078b6b4127de52099e51",
+    "semantic_hash": ""
+  },
+  "lib/features/player/domain/playback_service.dart": {
+    "mtime": 1784208160.5287871,
+    "ast_hash": "34169b62db60bb9c8dbd056433362837",
+    "semantic_hash": ""
+  },
+  "test/features/library/application/library_controller_test.dart": {
+    "mtime": 1784210481.664037,
+    "ast_hash": "e5696f9fc65ef2c0d871923da695b96b",
+    "semantic_hash": ""
+  },
+  "test/features/library/data/local_music_scanner_test.dart": {
+    "mtime": 1784210978.551582,
+    "ast_hash": "bc39d72aff283b06b20c1b6f0729904c",
+    "semantic_hash": ""
+  },
+  "test/features/player/application/player_controller_test.dart": {
+    "mtime": 1784208579.3072162,
+    "ast_hash": "345572b5e300cbac08ced3d870c1851d",
+    "semantic_hash": ""
+  },
+  "test/support/fakes.dart": {
+    "mtime": 1784210978.5502326,
+    "ast_hash": "3bd44512189470a14697182969d5624d",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260716_131456_\u7ee7\u7eed\u4e0b\u4e2a\u9636\u6bb5_\u672c\u5730\u66f2\u5e93\u626b\u63cf\u4e0e\u64ad\u653e\u5e94\u63a5\u5165\u5f53\u524d\u9879\u76ee\u7684\u54ea\u91cc.md": {
+    "mtime": 1784207696.4768896,
+    "ast_hash": "23600b6e13645c1c3a0963ecb4f274fe",
     "semantic_hash": ""
   }
 }

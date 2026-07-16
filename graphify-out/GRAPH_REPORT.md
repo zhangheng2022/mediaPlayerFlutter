@@ -1,16 +1,16 @@
 # Graph Report - media_player_flutter  (2026-07-16)
 
 ## Corpus Check
-- 187 files · ~139,241 words
+- 204 files · ~142,182 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1459 nodes · 1543 edges · 154 communities (79 shown, 75 thin omitted)
+- 1698 nodes · 1835 edges · 173 communities (101 shown, 72 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 31 edges (avg confidence: 0.81)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c0eb62e4`
+- Built from commit: `737c7b3d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -164,6 +164,25 @@
 - style
 - _typography
 - String?
+- Examples
+- MusicLibraryRepository
+- How to Use This Skill (The Workflow)
+- Matchers with No Direct Replacements
+- Q: 继续下个阶段：本地曲库扫描与播放应接入当前项目的哪里？
+- local_music_scanner_test.dart
+- AppColors
+- f5-annotated-screenshot.md
+- ft1-mast-headed.md
+- ft3-index-style-category-list.md
+- ft7-newsletter-first.md
+- h4-stat-led.md
+- h6-photographic-fold.md
+- h8-mockup-split-browser-framed.md
+- n11-mega-menu.md
+- n2-floating-chip.md
+- n7-brutal-slab.md
+- s4-inline-no-break.md
+- s5-bottom-anchored.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `Win32Window` - 22 edges
@@ -184,10 +203,10 @@
   linux/flutter/CMakeLists.txt → windows/flutter/CMakeLists.txt
 - `Linux Runner Target` --semantically_similar_to--> `Windows Runner Target`  [INFERRED] [semantically similar]
   linux/runner/CMakeLists.txt → windows/runner/CMakeLists.txt
-- `wWinMain()` --calls--> `CreateAndAttachConsole()`  [INFERRED]
-  windows/runner/main.cpp → windows/runner/utils.cpp
-- `Win32Window::Win32Window()` --calls--> `Destroy`  [INFERRED]
-  windows/runner/win32_window.cpp → windows/runner/win32_window.h
+- `FakeMusicLibraryRepository` --implements--> `MusicLibraryRepository`  [EXTRACTED]
+  test/support/fakes.dart → lib/features/library/domain/music_library_repository.dart
+- `FakePlaybackService` --implements--> `PlaybackService`  [EXTRACTED]
+  test/support/fakes.dart → lib/features/player/domain/playback_service.dart
 
 ## Import Cycles
 - None detected.
@@ -195,7 +214,7 @@
 ## Hyperedges (group relationships)
 - **Dart and Flutter Testing Workflows** — agents_skills_dart_add_unit_test_skill_testing_dart_and_flutter_applications, agents_skills_dart_generate_test_mocks_skill_testing_and_mocking_dart_applications, agents_skills_dart_collect_coverage_skill_implementing_dart_and_flutter_test_coverage, agents_skills_flutter_add_integration_test_skill_implementing_flutter_integration_tests, agents_skills_flutter_add_widget_test_skill_writing_flutter_widget_tests [INFERRED 0.85]
 
-## Communities (154 total, 75 thin omitted)
+## Communities (173 total, 72 thin omitted)
 
 ### Community 0 - "Windows Native Windowing"
 Cohesion: 0.06
@@ -207,15 +226,15 @@ Nodes (22): FlPluginRegistry, FlView, GApplication, gboolean, gchar, GObject, Gt
 
 ### Community 2 - "iOS Runner Tests"
 Cohesion: 0.06
-Nodes (26): Any, Cocoa, Flutter, FlutterAppDelegate, FlutterImplicitEngineBridge, FlutterImplicitEngineDelegate, FlutterMacOS, FlutterPluginRegistry (+18 more)
+Nodes (29): Any, audio_session, Cocoa, file_picker, Flutter, FlutterAppDelegate, FlutterImplicitEngineBridge, FlutterImplicitEngineDelegate (+21 more)
 
 ### Community 3 - "Windows Flutter Window"
 Cohesion: 0.03
-Nodes (27): C1 · Outlined chip, F2 · Sticky-scroll stack, F3 · Tabular spec sheet, F5 · Annotated screenshot, Ft1 · Mast-headed, Ft2 · Inline-rule single line, Ft3 · Index-style category list, Ft6 · Letter close (+19 more)
+Nodes (28): C1 · Outlined chip, C2 · Inline form-as-CTA, C3 · Typographic link, C4 · Sticky bottom bar, F1 · Bento grid, F2 · Sticky-scroll stack, F3 · Tabular spec sheet, F4 · Step sequence (+20 more)
 
 ### Community 4 - "Flutter Media Player UI"
-Cohesion: 0.16
-Nodes (12): app/app.dart, build, LibraryScreen, build, PlaylistScreen, build, SettingsScreen, main (+4 more)
+Cohesion: 0.18
+Nodes (11): app/app.dart, build, PlaylistScreen, build, SettingsScreen, main, package:flutter_web_plugins/url_strategy.dart, package:flutter/widgets.dart (+3 more)
 
 ### Community 5 - "iOS App Lifecycle"
 Cohesion: 0.05
@@ -238,12 +257,12 @@ Cohesion: 0.05
 Nodes (21): 01 · Bento Grid, 02 · Long Document, 03 · Marquee Hero, 04 · Stat-Led, 05 · Workbench, 06 · Conversational FAQ, 07 · Manifesto, 08 · Photographic (+13 more)
 
 ### Community 10 - "macOS Plugin Registration"
-Cohesion: 0.05
-Nodes (36): Contents, Examples, Executing Tests, Mocking with Mockito, Standard Unit Test Suite, Structuring Test Files, Task Progress, Test Implementation Workflow (+28 more)
+Cohesion: 0.12
+Nodes (15): 1. Add Dependencies, 1. Run Tests with VM Service, 2. Collect Coverage and Generate LCOV, 2. Collect Raw Coverage, 3. Feedback Loop: Validate Output, 3. Format to LCOV, Contents, Coverage Directives (+7 more)
 
 ### Community 11 - "Flutter UI Testing"
-Cohesion: 0.05
-Nodes (37): 10. Dynamic Map / JSON Lookup Casting, 1. Collection Equality Pitfall (`equals` vs `deepEquals`), 1. Dependency Setup, 1. Simple Custom Expectations (using `expect`), 1. Specific Error Matchers, 2. Identify and Plan Target Files, 2. Nested Property Extraction (using `nest` or `has`), 2. The `anything` Matcher (+29 more)
+Cohesion: 0.18
+Nodes (11): 10. Dynamic Map / JSON Lookup Casting, 1. Collection Equality Pitfall (`equals` vs `deepEquals`), 2. The `reason` Parameter is now `because`, 3. Regular Expression Matching (`matches` vs `matchesPattern`), 4. Property Extraction (`TypeMatcher.having` vs `.has`), 5. Synchronous vs. Asynchronous `throws`, 6. RegExp / Pattern Equality, 7. Strict Nullable Boolean Safety (`bool?` fields) (+3 more)
 
 ### Community 13 - "Dart Static Analysis"
 Cohesion: 0.06
@@ -271,7 +290,7 @@ Nodes (29): § A · The one follow-up question, B.1 · Anchor accent first, B.2 
 
 ### Community 22 - "Dart Dependency Management"
 Cohesion: 0.08
-Nodes (28): AppColors get, AppStyle get, AppColors, AppStyle, _body, borderRadius, color, darkColors (+20 more)
+Nodes (24): AppColors get, AppStyle get, _body, borderRadius, color, darkColors, _display, FColorsExtensions (+16 more)
 
 ### Community 23 - "Dart Pattern Matching"
 Cohesion: 0.07
@@ -292,6 +311,10 @@ Nodes (23): 1. Overview, 2.1 Basic Class Header Syntax, 2.2 Declaring, Initializ
 ### Community 71 - "Analyzing and Fixing Dart Code"
 Cohesion: 0.09
 Nodes (21): Contents, Core Concepts & Guidelines, Error Handling, Example: Fixing Dynamic List Assignments, Example: Fixing Method Overrides (Contravariance), Example: Fixing Null Safety with `late`, Examples, Null Safety (+13 more)
+
+### Community 72 - "SKILL.md"
+Cohesion: 0.19
+Nodes (4): H7 · Demo Video — Clipped-by-viewport-edge, H9 · Custom Illustration Centerpiece, Preview-block worked examples, `hallmark audit`
 
 ### Community 73 - "Hero enrichment — when, what, and how much"
 Cohesion: 0.09
@@ -338,12 +361,12 @@ Cohesion: 0.12
 Nodes (17): Banned defaults, Bans, Body text rules, Free body faces, Free display faces, Free mono / outlier faces, Headings rules, Hero headline sizing — match size to copy length (+9 more)
 
 ### Community 84 - "app.dart"
-Cohesion: 0.13
-Nodes (14): ../features/home/presentation/home_screen.dart, ../features/library/presentation/library_screen.dart, ../features/playlist/presentation/playlist_screen.dart, ../features/settings/presentation/settings_screen.dart, GoRouter, Application, build, router (+6 more)
+Cohesion: 0.20
+Nodes (9): ../features/home/presentation/home_screen.dart, ../features/library/presentation/library_screen.dart, ../features/playlist/presentation/playlist_screen.dart, ../features/settings/presentation/settings_screen.dart, GoRouter, appRouter, createRouter, package:go_router/go_router.dart (+1 more)
 
 ### Community 85 - "app_shell.dart"
-Cohesion: 0.14
-Nodes (15): AppShell, build, _desktopNavigationBreakpoint, _DesktopSidebar, _item, _MobileNavigationBar, navigationShell, onSelect (+7 more)
+Cohesion: 0.15
+Nodes (14): AppShell, build, _desktopNavigationBreakpoint, _DesktopSidebar, _item, _MobileNavigationBar, navigationShell, onSelect (+6 more)
 
 ### Community 86 - "AGENTS.md"
 Cohesion: 0.14
@@ -406,8 +429,8 @@ Cohesion: 0.20
 Nodes (10): 1. Read the project, then pause, 2. Produce `design.md` at the project root, 3. Redesign each page reading from `design.md`, 4. Diversification rule — INVERTED for multi-page, 5. When to amend `design.md` instead of overriding, `hallmark redesign`, § Multi-page flow — design.md first, then redesign, Non-destructive implementation rule (+2 more)
 
 ### Community 101 - "Floating nav on scroll — the cross-fade morph"
-Cohesion: 0.22
-Nodes (7): N10 · Floating-on-scroll morph, Anti-patterns Hallmark refuses, Floating nav on scroll — the cross-fade morph, The four laws — non-negotiable, The property morph (10 properties, one curve), The scroll handler, The structure
+Cohesion: 0.33
+Nodes (6): Anti-patterns Hallmark refuses, Floating nav on scroll — the cross-fade morph, The four laws — non-negotiable, The property morph (10 properties, one curve), The scroll handler, The structure
 
 ### Community 102 - "Genre — editorial (default)"
 Cohesion: 0.22
@@ -423,7 +446,7 @@ Nodes (9): Bans, Durations, Easings, Motion, Page-load orchestration, Principles
 
 ### Community 105 - "empty_feature_state.dart"
 Cohesion: 0.22
-Nodes (8): IconData, actionLabel, build, description, icon, onAction, title, VoidCallback?
+Nodes (8): IconData, actionLabel, build, description, EmptyFeatureState, icon, onAction, title
 
 ### Community 106 - "design.md — opt-in portable design system"
 Cohesion: 0.25
@@ -434,12 +457,12 @@ Cohesion: 0.25
 Nodes (7): Export formats, Format 1 — `tokens.css`, Format 2 — Tailwind v4 `@theme`, Format 3 — DTCG `tokens.json`, Format 4 — shadcn/ui CSS variables, Output rule, Token taxonomy — Hallmark's source of truth
 
 ### Community 108 - "package:forui/forui.dart"
-Cohesion: 0.29
-Nodes (6): build, HomeScreen, build, MiniPlayer, package:flutter/material.dart, package:forui/forui.dart
+Cohesion: 0.13
+Nodes (17): ../../app/app_scope.dart, ChangeNotifier, dart:async, ../../../features/library/presentation/track_tile.dart, ../../features/player/application/player_controller.dart, build, _HomeLibrary, HomeScreen (+9 more)
 
 ### Community 109 - "feature_page.dart"
-Cohesion: 0.25
-Nodes (7): actions, build, child, FeaturePage, title, List, Widget
+Cohesion: 0.22
+Nodes (8): actions, build, child, FeaturePage, title, List, package:flutter/material.dart, Widget
 
 ### Community 110 - "Compiling C Code into Code Assets with Native Assets Hooks"
 Cohesion: 0.29
@@ -470,8 +493,8 @@ Cohesion: 0.33
 Nodes (6): Step 1: Check/Add Dependencies, Step 2: Formulate Paths Dynamically, Step 3: Write the Script (`tool/ffigen.dart`), Step 4: Run Code Generation, Step 5: Static Analysis, Step-by-Step Workflow
 
 ### Community 117 - "application_test.dart"
-Cohesion: 0.33
-Nodes (5): dart:ui, package:flutter_test/flutter_test.dart, package:media_player_flutter/app/app.dart, package:media_player_flutter/app/router.dart, main
+Cohesion: 0.15
+Nodes (14): dart:io, dart:ui, package:flutter_test/flutter_test.dart, package:media_player_flutter/app/app.dart, package:media_player_flutter/app/app_dependencies.dart, package:media_player_flutter/app/router.dart, package:media_player_flutter/features/library/application/library_controller.dart, package:media_player_flutter/features/player/application/player_controller.dart (+6 more)
 
 ### Community 118 - "Verification Checklist"
 Cohesion: 0.40
@@ -493,25 +516,109 @@ Nodes (5): AFTER: Generating via FFIgen (The Correct Pattern), BEFORE: Manual FF
 Cohesion: 0.50
 Nodes (3): Output contract, Output contract & scope, Scope and limits
 
+### Community 123 - "c2-inline-form-as-cta.md"
+Cohesion: 0.05
+Nodes (38): AudioPlayer, ../domain/playback_service.dart, _configureSession, currentIndexStream, dispose, durationStream, JustAudioPlaybackService, _mapProcessingState (+30 more)
+
+### Community 124 - "c3-typographic-link.md"
+Cohesion: 0.06
+Nodes (34): Exception?, package:media_player_flutter/features/library/domain/music_library_repository.dart, package:media_player_flutter/features/player/domain/playback_service.dart, cancelled, currentIndex, currentIndexStream, dispose, _duration (+26 more)
+
+### Community 125 - "c4-sticky-bottom-bar.md"
+Cohesion: 0.06
+Nodes (30): Duration?, Duration get, int?, canGoNext, canGoPrevious, _currentIndex, dispose, _disposed (+22 more)
+
+### Community 126 - "f1-bento-grid.md"
+Cohesion: 0.10
+Nodes (20): app_dependencies.dart, app_scope.dart, InheritedWidget, Application, _ApplicationState, build, createState, dependencies (+12 more)
+
+### Community 127 - "f4-step-sequence.md"
+Cohesion: 0.14
+Nodes (13): bool get, _errorMessage, hasTracks, importMusic, isScanning, LibraryStatus, _repository, _setError (+5 more)
+
+### Community 128 - "f6-product-card-grid.md"
+Cohesion: 0.17
+Nodes (11): ../domain/audio_track.dart, ../domain/music_library_repository.dart, _filePicker, importTracks, _scanner, chooseAudioFiles, FilePickerMusicFilePickerService, MusicFilePickerService (+3 more)
+
+### Community 130 - "ft5-statement.md"
+Cohesion: 0.17
+Nodes (11): Contents, Examples, Feedback Loop: Test Failures, Generating Mocks, High-Fidelity Mocking and Testing Example, Implementing Unit Tests, Managing Dependencies, Structuring Code for Testability (+3 more)
+
+### Community 132 - "h7-demo-video-clipped-by-viewport-edge.md"
+Cohesion: 0.18
+Nodes (11): DateTime, _isSupported, LocalMusicScanner, modifiedAt, MusicScanner, path, ScannedAudioFile, scanPaths (+3 more)
+
+### Community 133 - "h9-custom-illustration-centerpiece.md"
+Cohesion: 0.17
+Nodes (11): int get, artist, extension, fromFile, hashCode, id, modifiedAt, operator (+3 more)
+
+### Community 135 - "n1-wordmark-2-links.md"
+Cohesion: 0.18
+Nodes (10): Contents, Examples, Executing Tests, Mocking with Mockito, Standard Unit Test Suite, Structuring Test Files, Task Progress, Test Implementation Workflow (+2 more)
+
+### Community 137 - "n4-hidden-behind-k.md"
+Cohesion: 0.20
+Nodes (9): 1. Simple Custom Expectations (using `expect`), 2. Nested Property Extraction (using `nest` or `has`), 3. Asynchronous Custom Expectations, Contents, Matcher-to-Checks Mapping Table, Migrating Dart Tests to Package Checks, Strategies for Discovery, When to Use This Skill (+1 more)
+
+### Community 138 - "n5-floating-pill.md"
+Cohesion: 0.20
+Nodes (9): ../../../features/library/application/library_controller.dart, ../features/library/data/local_music_library_repository.dart, ../features/library/data/local_music_scanner.dart, ../features/library/data/music_file_picker_service.dart, ../features/player/data/just_audio_playback_service.dart, dispose, library, player (+1 more)
+
+### Community 139 - "n8-terminal-command.md"
+Cohesion: 0.22
+Nodes (8): ../application/library_controller.dart, build, library, _LibraryContent, LibraryScreen, player, ../../player/application/player_controller.dart, track_tile.dart
+
+### Community 144 - "t4-numbered-stat-strip.md"
+Cohesion: 0.22
+Nodes (8): AudioTrack, build, onPress, playing, selected, track, TrackTile, VoidCallback?
+
+### Community 154 - "Examples"
+Cohesion: 0.29
+Nodes (7): Asynchronous Futures, Asynchronous Streams, Basic Assertions, Chaining and Cascades, Collection and Deep Equality, Complex Property Matching (has), Examples
+
+### Community 155 - "MusicLibraryRepository"
+Cohesion: 0.33
+Nodes (5): audio_track.dart, LocalMusicLibraryRepository, importTracks, MusicLibraryRepository, FakeMusicLibraryRepository
+
+### Community 156 - "How to Use This Skill (The Workflow)"
+Cohesion: 0.40
+Nodes (5): 1. Dependency Setup, 2. Identify and Plan Target Files, 3. Migrating a File (Incremental or Full), 4. Verification and Feedback Loops, How to Use This Skill (The Workflow)
+
+### Community 157 - "Matchers with No Direct Replacements"
+Cohesion: 0.40
+Nodes (5): 1. Specific Error Matchers, 2. The `anything` Matcher, 3. Specific Numeric Toggles, 4. Numeric Ranges, Matchers with No Direct Replacements
+
+### Community 158 - "Q: 继续下个阶段：本地曲库扫描与播放应接入当前项目的哪里？"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: 继续下个阶段：本地曲库扫描与播放应接入当前项目的哪里？, Source Nodes
+
+### Community 159 - "local_music_scanner_test.dart"
+Cohesion: 0.40
+Nodes (4): package:media_player_flutter/features/library/data/local_music_scanner.dart, package:media_player_flutter/features/library/domain/audio_track.dart, package:path/path.dart, main
+
+### Community 160 - "AppColors"
+Cohesion: 1.33
+Nodes (3): AppColors, AppStyle, ThemeExtension
+
 ## Knowledge Gaps
-- **955 isolated node(s):** `router`, `build`, `appRouter`, `createRouter`, `_desktopNavigationBreakpoint` (+950 more)
+- **1101 isolated node(s):** `router`, `dependencies`, `_ownsDependencies`, `createState`, `dispose` (+1096 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **75 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **72 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Anti-patterns — the named tells` connect `Minor (small taste issues)` to `SKILL.md`, `Microinteraction tells`, `Critical (ships as slop)`, `Major (looks AI-generated)`?**
-  _High betweenness centrality (0.032) - this node is a cross-community bridge._
-- **Why does `Assets — sourcing canon for icons, logos, illustrations, photography, video` connect `iOS App Lifecycle` to `SKILL.md`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
-- **Why does `Component cookbook` connect `Archetype index — load ONLY the picks you need` to `Windows Flutter Window`?**
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+- **Why does `Hallmark` connect `Dart Pattern Matching` to `SKILL.md`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **What connects `router`, `build`, `appRouter` to the rest of the system?**
-  _955 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `Microinteractions` connect `Flutter Localization` to `SKILL.md`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+- **What connects `router`, `dependencies`, `_ownsDependencies` to the rest of the system?**
+  _1101 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Windows Native Windowing` be split into smaller, more focused modules?**
   _Cohesion score 0.0597567424643046 - nodes in this community are weakly interconnected._
 - **Should `Linux Flutter Runner` be split into smaller, more focused modules?**
   _Cohesion score 0.09401709401709402 - nodes in this community are weakly interconnected._
 - **Should `iOS Runner Tests` be split into smaller, more focused modules?**
-  _Cohesion score 0.06153846153846154 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05647840531561462 - nodes in this community are weakly interconnected._
