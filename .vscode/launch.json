@@ -1,23 +1,29 @@
 {
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
         {
-            "name": "media_player_flutter",
+            "name": "音乐播放器（稳定调试）",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "flutterMode": "debug",
+            "toolArgs": [
+                "--no-dds"
+            ]
         },
         {
-            "name": "media_player_flutter (profile mode)",
+            "name": "音乐播放器（DDS 调试）",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug"
+        },
+        {
+            "name": "音乐播放器（性能分析）",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "media_player_flutter (release mode)",
+            "name": "音乐播放器（发布模式）",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

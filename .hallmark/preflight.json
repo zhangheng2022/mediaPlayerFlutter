@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-16",
+  "framework": "Flutter 3.44 with Forui 0.24",
+  "font_stack": "Forui default typeface",
+  "palette": "warm-neutral light/dark themes with phosphor-lime primary",
+  "motion": "motion-cut",
+  "spacing": "Forui generated touch theme",
+  "preserve": [
+    "Forui component system",
+    "generated theme tokens",
+    "light and dark theme compatibility"
+  ]
+}
